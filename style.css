@@ -167,7 +167,8 @@ nav {
   height: 0;
 }
 
-.nav__link--primary, .btn:hover {
+.nav__link--primary:hover,
+.btn:hover {
   background-color: #5011cc;
   color: #fff;
 }
@@ -255,8 +256,6 @@ nav {
   opacity: 1;
   transform: translateX(0);
 }
-
-
 
 /* 
 
@@ -514,8 +513,6 @@ path[style] {
   margin-top: 32px;
 }
 
-
-
 /* 
 
 STEPS
@@ -527,7 +524,8 @@ STEPS
   align-items: center;
 }
 
-.steps__img--wrapper, .steps__description {
+.steps__img--wrapper,
+.steps__description {
   width: 50%;
 }
 
@@ -598,7 +596,113 @@ svg:not(:root) {
   line-height: 2;
 }
 
+/* 
+VALUES
+*/
 
+.values__description,
+.values__img {
+  width: 50%;
+}
+
+.values__description {
+  padding: 32px 64px 32px 0;
+}
+
+#values .section__title {
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.values__list {
+  margin-left: 0px;
+  margin-right: 0px;
+  display: flex;
+  max-width: none;
+  flex-direction: row;
+}
+
+.value {
+  margin-top: 2rem;
+  margin-right: 2rem;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.value:nth-of-type(1) {
+  margin-top: 32px;
+  margin-right: 32px;
+}
+
+.value__title {
+  display: flex;
+  align-items: center;
+}
+
+.value:nth-child(1) .value__img--wrapper {
+  background-color: #9ae6b4;
+}
+
+.value__img--wrapper {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+}
+
+.value__img {
+  width: 20px;
+  height: 20px;
+}
+
+svg[style] {
+  width: 24;
+  height: 24;
+  fill: none;
+  stroke: rgb(39, 103, 73);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.value__name {
+  margin-left: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #243e63;
+}
+
+.value__para {
+  margin-top: 16px;
+  line-height: 1.625;
+  color: #718096;
+}
+
+.value:nth-of-type(2) {
+margin-top: 32px;
+}
+
+.value:nth-child(2)
+.value__img--wrapper {
+  background-color: #feb2b2;
+}
+
+svg[Style] {
+  width: 24;
+  height: 24;
+  fill: none;
+  stroke: rgb(155, 44, 44);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+#values .btn {
+  margin-top: 48px;
+}
 
 
 /* 
@@ -690,6 +794,13 @@ footer {
   .quality__description {
     margin-right: 0px;
     padding-right: 48px;
+  }
+  .values__list {
+    max-width: 20rem;
+    flex-direction: column;
+  }
+  .value {
+    margin-top: 2.5rem;
   }
 }
 
