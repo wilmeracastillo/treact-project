@@ -1355,7 +1355,7 @@ path[Style] {
 
 @media (max-width: 1024px) {
   .nav__links {
-    visibility: hidden;
+    display: none;
   }
   .btn__menu {
     display: block;
@@ -1548,6 +1548,8 @@ path[Style] {
   }
   .steps__description {
     margin-top: 64px;
+    width: 100%;
+    padding-left: 0;
   }
   .step {
     flex-direction: column;
@@ -1631,5 +1633,9 @@ path[Style] {
     font-size: 14px;
     text-align: center;
     line-height: 1.5;
+  }
+  .footer__bottom {
+    flex-direction: column;
+    gap: 10px;
   }
 }
